@@ -16,4 +16,4 @@ cd /root && git clone -b master git://github.com/TrinityCore/TrinityCore.git && 
 cd TrinityCore && mkdir build && cd build && \ 
 cmake ../ -DSCRIPTS="static" -DTOOLS=1 -DSERVERS=1 -DCMAKE_INSTALL_PREFIX=/root/srv -DWITH_WARNINGS=0 -DUSE_COREPCH=1 -DUSE_SCRIPTPCH=1 -DCONF_DIR=/root/srv/conf -DLIBSDIR=/root/srv/lib && \
 make -j $(nproc) && make install && \
-cd /root && tar -cvzf core.tar.gz srv && rm -rf srv
+cd /root && tar -cvzf core.tar.gz srv && rm -rf srv && rm -rf TrinityCore
