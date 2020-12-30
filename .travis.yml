@@ -7,4 +7,10 @@ services:
   - docker
 
 before_install:
-  - docker build -t mindevis/dcr-trinitycore .
+  - docker build --pull --rm -f "Dockerfile" -t dcr-trinitycore:latest .
+
+install:
+  - docker run --rm -d -v /root/compiled:/root/compiled dcr-trinitycore:latest
+
+script:
+  - if [ -f "/root/compiled/core.tar.gz"]; then echo "Compiled archive found"; fi

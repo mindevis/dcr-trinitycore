@@ -13,4 +13,3 @@ RUN apt-get autoclean -y && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 WORKDIR "/root"
 RUN wget https://raw.githubusercontent.com/mindevis/dcr-trinitycore/main/compile.sh && chmod +x compile.sh
 ENTRYPOINT [ "./compile.sh" ]
-CMD ["./compile.sh"]
