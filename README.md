@@ -4,4 +4,4 @@
 
 main | dev
 :------------: | :------------:
-[![main Build Status](https://travis-ci.org/mindevis/dcr-trinitycore.svg?branch=main)](https://travis-ci.org/mindevis/dcr-trinitycore) | [![dev Build Status](https://travis-ci.org/mindevis/dcr-trinitycore.svg?branch=dev)](https://travis-ci.org/mindevis/dcr-trinitycore)
+[![main Build Status](https://travis-ci.com/mindevis/dcr-trinitycore.svg?branch=main)](https://travis-ci.com/mindevis/dcr-trinitycore) | [![dev Build Status](https://travis-ci.com/mindevis/dcr-trinitycore.svg?branch=dev)](https://travis-ci.com/mindevis/dcr-trinitycore)
