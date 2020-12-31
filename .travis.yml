@@ -10,7 +10,4 @@ before_install:
   - docker build --pull --rm -f "Dockerfile" -t dcr-trinitycore:latest .
 
 install:
-  - docker run --rm -d -v /root/compiled:/root/compiled dcr-trinitycore:latest
-
-script:
-  - if [ -f "/root/compiled/core.tar.gz"]; then echo "Compiled archive found"; fi
+  - docker run --rm -it -v /root/compiled:/root/compiled dcr-trinitycore:latest

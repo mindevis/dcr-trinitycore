@@ -12,5 +12,5 @@ make -j $(nproc) && make install
 echo "Compile successful"
 echo "Create .tar.gz archive"
 cd /root
-tar -cvzf core.tar.gz srv && mkdir compiled && mv core.tar.gz compiled/core.tar.gz
+tar -cvzf core.tar.gz srv && mv core.tar.gz compiled/core.tar.gz
 echo "Successful created .tar.gz archive"
